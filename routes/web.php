@@ -14,9 +14,37 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Frontend.layout');
+
+Route::get('/',function(){
+return view('FrontEnd.index');
 });
+
+Route::get('/pricing',function(){
+    return view('FrontEnd.pricing');
+    });
+    
+    
+Route::get('/feature',function(){
+    return view('FrontEnd.feature');
+    });
+    
+
+
+Route::get('/team',function(){
+    return view('FrontEnd.team');
+    });
+
+Route::get('/about',function(){
+    return view('FrontEnd.about');
+    });
+
+    Route::get('/service',function(){
+        return view('FrontEnd.service');
+        });
+
+Route::get('/contact',function(){
+    return view('FrontEnd.contact');
+    });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
