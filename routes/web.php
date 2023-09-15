@@ -19,6 +19,28 @@ Route::get('/',function(){
 return view('FrontEnd.index');
 });
 
+Route::get('/table',function(){
+    return view('BackEnd.table');
+    });
+
+    Route::get('/map',function(){
+        return view('BackEnd.map');
+        });
+    
+    Route::get('/calendar',function(){
+        return view('BackEnd.calendar');
+        });
+    Route::get('/form',function(){
+        return view('BackEnd.form');
+        });
+Route::get('/admin',function(){
+    return view('BackEnd.index');
+    });
+    
+
+    Route::get('/chart',function(){
+        return view('BackEnd.chart');
+        });
 Route::get('/pricing',function(){
     return view('FrontEnd.pricing');
     });
